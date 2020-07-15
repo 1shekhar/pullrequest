@@ -15,12 +15,15 @@
 
 /* global document, window */
 
+/*Garima ke man ki shanti ke liye added new line */
+
 ( function( document, window ) {
     "use strict";
 
     // Wait for impress.js to be initialized
     document.addEventListener( "impress:init", function( event ) {
         var api = event.detail.api;
+        console.log("garima ki man ki shanti");
 
         // Rescale presentation when window is resized
         api.lib.gc.addEventListener( window, "resize", api.lib.util.throttle( function() {
